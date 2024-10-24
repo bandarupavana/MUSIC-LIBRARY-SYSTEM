@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Library System</title>
+    <link rel="stylesheet" href="extension.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#add-song">Add Song</a></li>
+                <li><a href="#view-songs">View Songs</a></li>
+                <li><a href="#manage-songs">Manage Songs</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner" id="home">
+        <h1>Welcome to the Music Library</h1><br> <br>
+        <p>Your collection of music in one place!</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <section id="add-song">
+        <div class="form-container">
+            <div class="form-box">
+                <h2>Add Song</h2>
+                <form action="/add" method="POST">
+                    <label for="title">Song Title:</label>
+                    <input type="text" id="title" name="title" required><br><br>
+                    <label for="artist">Artist:</label>
+                    <input type="text" id="artist" name="artist" required><br><br>
+                    <label for="album">Album:</label>
+                    <input type="text" id="album" name="album" required><br><br>
+                    <label for="year">Year:</label>
+                    <input type="number" id="year" name="year" required><br><br>
+                    <label for="genre">Genre:</label>
+                    <input type="text" id="genre" name="genre" required><br><br>
+                    <button type="submit">Add Song</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section id="view-songs">
+        <div class="form-container">
+            <h2>View Songs</h2>
+            <a href="/view">View All Songs</a>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section id="manage-songs">
+        <div class="form-container">
+            <div class="form-box">
+                <h2>Update Song</h2>
+                <form action="/update" method="POST">
+                    <label for="update-title">Song Title:</label>
+                    <input type="text" id="update-title" name="title" required><br><br>
+                    <label for="update-artist">Artist:</label>
+                    <input type="text" id="update-artist" name="artist" required><br><br>
+                    <label for="update-album">Album:</label>
+                    <input type="text" id="update-album" name="album" required><br><br>
+                    <label for="update-year">Year:</label>
+                    <input type="number" id="update-year" name="year" required><br><br>
+                    <label for="update-genre">Genre:</label>
+                    <input type="text" id="update-genre" name="genre" required><br><br>
+                    <button type="submit">Update Song</button>
+                </form>
+            </div>
+<br>
+<br>
+<br>
+            <div class="form-box">
+                <h2>Delete Song</h2>
+                <form action="/delete" method="POST">
+                    <label for="delete-title">Song Title:</label>
+                    <input type="text" id="delete-title" name="title" required>
+                    <button type="submit">Delete Song</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

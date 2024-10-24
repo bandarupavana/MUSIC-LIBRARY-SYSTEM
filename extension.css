@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.banner {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    background-size: cover;
+    position: relative;
+}
+
+#home {
+    background-image: url('musicpic.jpeg');
+}
+
+#add-song {
+    background-image: url('thumbnail2.jpg');
+}
+
+#view-songs {
+    background-image: url('taxpic\ 1.png');
+}
+
+#manage-songs {
+    background-image: url('taxpic\ 2.png');
+}
+
+#forms {
+    display: flex;
+}
+
+.form-container {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-box {
+    background: white;
+    display: block;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 2px grey;
+    width: 300px;
+    position: relative;
+}
+
+form {
+    display: inline;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 400px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+form input:focus {
+    border-color: #333;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: grey;
+}
+
